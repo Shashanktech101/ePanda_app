@@ -1,0 +1,153 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+    height: 100%;
+}
+
+
+/* Layout */
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'header' 'main' 'footer';
+    grid-template-columns: 1fr;
+    grid-template-rows: 5rem 1fr 5rem;
+    height: 100%;
+}
+
+.poster1 {
+    color: rgb(238, 26, 26);
+    text-align: center;
+    font-size: 25px;
+    font-weight: 0;
+    margin-top: 1.5rem;
+    padding: 0.1rem;
+    background-color: rgb(129, 172, 252);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+img {
+    padding: 4px;
+    width: 60px;
+    padding-left: 5rem;
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(13, 14, 14);
+}
+
+main {
+    grid-area: main;
+    padding: 1rem;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #203040;
+    color: aqua;
+}
+
+
+/* Common */
+
+main h2 {
+    font-size: 1.8rem;
+    padding-left: 7px;
+}
+
+.price h3 {
+    font-size: 1.9rem;
+    padding-left: 8px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: orangered;
+}
+
+
+/* header */
+
+header a {
+    color: antiquewhite;
+    padding: 1rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    color: gold;
+    font-size: 40px;
+    font-family: 'Edu QLD Beginner', cursive;
+}
+
+.logo1 {
+    padding-left: 2rem;
+}
+
+.logo p {
+    font-size: 10px;
+    color: silver;
+    font-weight: 53px;
+    font-style: oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* image */
+
+img {
+    border-radius: .5rem;
+    padding: 0;
+}
+
+img.medium {
+    max-width: 29rem;
+    width: 100%;
+}
+
+
+/* card */
+
+.card {
+    border: 0.5rem rgb(38, 36, 36);
+    background-color: rgb(212, 222, 217);
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
+
+.card-body>* {
+    margin-bottom: 0.5rem;
+}
+
+
+/* Rating */
+
+.rating span {
+    color: rgb(251, 219, 40);
+    margin: 0.1rem;
+    padding-left: 7px;
+    border: 1rem black;
+}
